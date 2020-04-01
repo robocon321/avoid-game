@@ -38,7 +38,7 @@ class App extends React.Component {
 	}
 	gameOver = () => {
 		var { enemy_dot, my_dot } = this.state;
-		enemy_dot.map((item) => {
+		enemy_dot.forEach((item) => {
 			var { left, top, direct } = item;
 			if (
 				direct === 37 &&
